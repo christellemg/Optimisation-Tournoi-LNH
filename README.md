@@ -1,1 +1,14 @@
-# Optimisation-Tournoi-LNH
+La Ligne Nationale de Hockey (LNH) est une association sportive professionnelle nord-américaine qui prend place de septembre à juin, chaque année. Elle se déroule en 2 temps : d’une part, la saison régulière (octobre-avril) pendant laquelle toutes les équipes s’affrontent et d’autre part, la série éliminatoire (playoff, avril-juin) qui se déroule entre les meilleures équipes issues de la première phase. 
+
+Ce rapport se concentre uniquement sur la première phase du tournoi, soit la saison régulière. Il s’agit de concevoir un horaire de jeu pour les équipes sportives qui permet de respecter les règles propres à la LNH. La particularité de cette étude relève du contexte sanitaire de la Covid-19, qui a donc modifié certaines règles, notamment les équipes impliquées dans le tournoi : dans ce cas, les équipes américaines sont écartées. Seules les 7 équipes canadiennes sont considérées. Il s’agit des Canadiens de Montréal, Maple Leafs de Toronto, Sénateurs d’Ottawa, Jets de Winnipeg, Flames de Calgary, Oilers d’Edmonton et Canucks de Vancouver. 
+
+La saison régulière se déroule selon un tournoi « double round robin » : chacune de ses 7 équipes va affronter les autres 2 fois ; 1 fois à domicile et 1 fois à l’extérieur. Ainsi, chaque équipe disputera un total de 12 matchs. Globalement, 42 matchs se dérouleront pendant la saison régulière. Finalement, l’attribution des points se fait de la façon suivante : une victoire correspond à 2 points, une défaite en prolongation ou lors des tirs de fusillade vaut 1 point et une défaite lors du temps réglementaire 0 point. 
+
+Avec cette approche de « double round robin », le hasard est minimisé puisque toutes les équipes se rencontrent et ont l’opportunité de gagner malgré une mauvaise performance antérieure. Ceci dit, une certaine asymétrie est susceptible de surgir en fin de tournoi, lorsque par exemple une équipe ayant déjà accumulé un bon nombre de points – donc une qualification assurée – pourrait choisir de perdre délibérément. Une question d’équité se pose alors.
+
+Somme toute, concevoir l’horaire de jeu pour les 7 équipes canadiennes de la LNH relève d’un problème de « Traveling Tournament Problem » (TTP) qui s’articule autour de 2 contraintes traditionnelles fondamentales. 
+
+Dans un premier temps, il est important de tenir compte de la question de faisabilité : les déplacements des équipes selon l’horaire obtenu doivent éviter une longue période de jeu à domicile (home stands) ainsi qu’une longue période successive de déplacement à l’extérieur (road trips). En fait, une courte période à domicile est cruciale pour permettre l’entretien de la glace de l’aréna qui se dégrade après 3 matchs successifs. De même, une courte période à l’extérieur permet d’optimiser la performance des athlètes qui ne seraient donc pas épuisés par une longue route. 
+
+Dans un deuxième temps, il est primordial d’éviter des voyages excessifs. En d’autres termes, il s’agit de minimiser la distance totale parcourue par les équipes.
+
